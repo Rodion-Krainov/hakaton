@@ -1,13 +1,11 @@
-[gd_scene load_steps=4 format=3 uid="uid://cey042ecgr3yy"]
+[gd_scene load_steps=3 format=3 uid="uid://cey042ecgr3yy"]
 
 [ext_resource type="Script" path="res://Button.gd" id="1_goq44"]
-[ext_resource type="Script" path="res://pause_menu.gd" id="1_oxu7d"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_rvmcb"]
 font_size = 72
 
 [node name="pause_menu" type="Node2D"]
-script = ExtResource("1_oxu7d")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 custom_minimum_size = Vector2(100, 100)

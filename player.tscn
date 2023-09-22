@@ -1,7 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://c0aembr5ysoxf"]
+[gd_scene load_steps=6 format=3 uid="uid://c0aembr5ysoxf"]
 
 [ext_resource type="Texture2D" uid="uid://b7bb4aesblw2d" path="res://images/WhiteSquare.png" id="1_b4lvj"]
 [ext_resource type="Script" path="res://player.gd" id="1_wmchu"]
+[ext_resource type="AudioStream" uid="uid://u1blflbfxbny" path="res://sound/jump.wav" id="3_jitxc"]
+[ext_resource type="AudioStream" uid="uid://dc1xyufhlf7nf" path="res://sound/death.mp3" id="3_xibmi"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ebj8d"]
 size = Vector2(256, 256)
@@ -17,5 +19,7 @@ texture = ExtResource("1_b4lvj")
 shape = SubResource("RectangleShape2D_ebj8d")
 
 [node name="jump" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_jitxc")
 
-[node name="die" type="AudioStreamPlayer2D" parent="."]
+[node name="death" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_xibmi")
