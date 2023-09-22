@@ -42,4 +42,5 @@ offset_right = 910.0
 offset_bottom = 484.0
 text = "EXIT"
 
-[node name="die" type="AudioStreamPlayer2D" parent="."]
+[connection signal="pressed" from="ColorRect/Button" to="ColorRect/Button" method="_replay"]
+[connection signal="pressed" from="ColorRect/Button2" to="ColorRect/Button" method="_exit"]
