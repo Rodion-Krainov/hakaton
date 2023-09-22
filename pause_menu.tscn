@@ -2,10 +2,13 @@
 
 [ext_resource type="Script" path="res://Button.gd" id="1_goq44"]
 
+[sub_resource type="GDScript" id="GDScript_w7b5k"]
+
 [sub_resource type="LabelSettings" id="LabelSettings_rvmcb"]
 font_size = 72
 
 [node name="pause_menu" type="Node2D"]
+script = SubResource("GDScript_w7b5k")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 custom_minimum_size = Vector2(100, 100)
