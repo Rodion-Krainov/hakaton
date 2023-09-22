@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://c0aembr5ysoxf"]
+
+[ext_resource type="Texture2D" uid="uid://b7bb4aesblw2d" path="res://images/WhiteSquare.png" id="1_b4lvj"]
+[ext_resource type="Script" path="res://player.gd" id="1_wmchu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ebj8d"]
+size = Vector2(256, 256)
+
+[node name="player" type="CharacterBody2D"]
+scale = Vector2(0.24, 0.24)
+script = ExtResource("1_wmchu")
+
+[node name="WhiteSquare" type="Sprite2D" parent="."]
+texture = ExtResource("1_b4lvj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_ebj8d")
