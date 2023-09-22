@@ -19,9 +19,10 @@ func _physics_process(delta):
 		var direction = Input.get_axis("left", "right")
 		if direction:
 			velocity.x = direction * SPEED
-		else:
-			velocity.x = move_toward(velocity.x, 0, SPEED)
+		else:			velocity.x = move_toward(velocity.x, 0, SPEED)
 		prev_speed = velocity.x
 		move_and_slide()
 		if global_position.y > 800:
 			get_tree().change_scene_to_file("res://pause_menu.tscn")
+		if global_position.x >= 6500:
+			get_tree().change_scene_to_file("res://third_level.tscn")
